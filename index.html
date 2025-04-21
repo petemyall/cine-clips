@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Myall Family 1970's Cine Clips</title>
   <style>
     body {
-      background-color: #0066cc;
+      background-color: #005a9c;
       color: white;
       font-family: Arial, sans-serif;
       text-align: center;
-      margin: 0;
-      padding: 0;
+      padding: 20px;
     }
     h1 {
-      margin-top: 20px;
+      margin-bottom: 10px;
     }
     p {
-      background-color: yellow;
-      color: black;
-      padding: 10px;
-      font-weight: bold;
-      margin: 20px auto;
-      display: inline-block;
+      margin-top: 0;
+      font-size: 1.2em;
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin: 20px;
+      gap: 20px;
+      margin-top: 20px;
     }
-    .thumb {
-      margin: 10px;
+    .video-thumb {
+      width: 200px;
       cursor: pointer;
       border: 4px solid white;
-      border-radius: 8px;
+      border-radius: 10px;
+      transition: transform 0.2s;
     }
-    .thumb:hover {
-      border-color: yellow;
+    .video-thumb:hover {
+      transform: scale(1.05);
     }
-    img {
-      width: 200px;
-      height: auto;
-      border-radius: 8px;
+    iframe {
+      margin-top: 20px;
+      width: 80%;
+      height: 450px;
+      max-width: 800px;
     }
   </style>
 </head>
@@ -50,17 +47,24 @@
   <h1>Myall Family 1970's Cine Clips</h1>
   <p>CLICK A PICTURE TO WATCH THE VIDEO</p>
   <div class="gallery">
-    <a href="https://drive.google.com/file/d/1wltzjbryOZYqxjaMhU73KZlTlUdAKU4e/view?usp=sharing" target="_blank"><img class="thumb" src="thumb1.jpg" alt="Clip 1" /></a>
-    <a href="https://drive.google.com/file/d/1DGdp8BjwcK9Ld9AjzPAqlxYYNkoFp-98/view?usp=sharing" target="_blank"><img class="thumb" src="thumb2.jpg" alt="Clip 2" /></a>
-    <a href="https://drive.google.com/file/d/1rjcSIanhE7DGzIUv_qcHTipFa_HbC4js/view?usp=sharing" target="_blank"><img class="thumb" src="thumb3.jpg" alt="Clip 3" /></a>
-    <a href="https://drive.google.com/file/d/1N6FKpmHQ3Nqfo9ZqynxNMH-QItV7lzvV/view?usp=sharing" target="_blank"><img class="thumb" src="thumb4.jpg" alt="Clip 4" /></a>
-    <a href="https://drive.google.com/file/d/1tOwbK3KMlplWF_ZSCAwLGPEqmryGQbwB/view?usp=sharing" target="_blank"><img class="thumb" src="thumb5.jpg" alt="Clip 5" /></a>
-    <a href="https://drive.google.com/file/d/108GRTAL8yAvPLJ4IyDvknRinuw5sR5Ur/view?usp=sharing" target="_blank"><img class="thumb" src="thumb6.jpg" alt="Clip 6" /></a>
-    <a href="https://drive.google.com/file/d/159_blKxeQfZx47a2i8q9kqaILWdDaMiV/view?usp=sharing" target="_blank"><img class="thumb" src="thumb7.jpg" alt="Clip 7" /></a>
-    <a href="https://drive.google.com/file/d/1QOFmtrrCWAlHekB0qcoc1yFLBuV5nZQI/view?usp=sharing" target="_blank"><img class="thumb" src="thumb8.jpg" alt="Clip 8" /></a>
+    <img src="thumbs/thumb1.jpg" class="video-thumb" onclick="playVideo('1wltzjbryOZYqxjaMhU73KZlTlUdAKU4e')" alt="Clip 1">
+    <img src="thumbs/thumb2.jpg" class="video-thumb" onclick="playVideo('1DGdp8BjwcK9Ld9AjzPAqlxYYNkoFp-98')" alt="Clip 2">
+    <img src="thumbs/thumb3.jpg" class="video-thumb" onclick="playVideo('1rjcSIanhE7DGzIUv_qcHTipFa_HbC4js')" alt="Clip 3">
+    <img src="thumbs/thumb4.jpg" class="video-thumb" onclick="playVideo('1N6FKpmHQ3Nqfo9ZqynxNMH-QItV7lzvV')" alt="Clip 4">
+    <img src="thumbs/thumb5.jpg" class="video-thumb" onclick="playVideo('1tOwbK3KMlplWF_ZSCAwLGPEqmryGQbwB')" alt="Clip 5">
+    <img src="thumbs/thumb6.jpg" class="video-thumb" onclick="playVideo('108GRTAL8yAvPLJ4IyDvknRinuw5sR5Ur')" alt="Clip 6">
+    <img src="thumbs/thumb7.jpg" class="video-thumb" onclick="playVideo('159_blKxeQfZx47a2i8q9kqaILWdDaMiV')" alt="Clip 7">
+    <img src="thumbs/thumb8.jpg" class="video-thumb" onclick="playVideo('1QOFmtrrCWAlHekB0qcoc1yFLBuV5nZQI')" alt="Clip 8">
     <img src="thumbs/thumb9.jpg" class="video-thumb" onclick="playVideo('1j0-moRczb4NrdG_qq83exG7JsnmjlUta')" alt="Clip 9">
-  </a>
+  </div>
 
-</div>
+  <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen></iframe>
+
+  <script>
+    function playVideo(fileId) {
+      const link = "https://drive.google.com/file/d/" + fileId + "/preview";
+      document.getElementById('videoPlayer').src = link;
+    }
+  </script>
 </body>
 </html>
