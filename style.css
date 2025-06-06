@@ -53,15 +53,17 @@ nav.journal-nav a {
   }
 }
 .description-box {
+  max-width: 600px;
+  margin-bottom: 60px;
   background: rgba(173, 216, 230, 0.5); /* Pale blue with more transparency */
   color: #003366;                       /* Deep blue text for readability */
   max-width: 800px;                     /* Wide enough for readability */
   margin: 5px 20px 5px 20px;             /* Centered with spacing */
-  padding: 25px;                        /* Padding for content */
+  padding: 10px;                        /* Padding for content */
   border-radius: 15px;                  /* Rounded corners */
   box-shadow: 4px 4px 15px rgba(0,0,0,0.2); /* Soft shadow */
   font-size: 0.9em;                     /* Slightly larger text */
-  line-height: 1.5;                     /* Comfortable spacing between lines */
+  line-height: 1.2;                     /* Comfortable spacing between lines */
 }
 
 .description-box p {
