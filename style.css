@@ -3,20 +3,30 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   font-size: 18px;
   line-height: 1.5;
+  font-family: sans-serif;
   background: url('./cine-clip-background.jpg') center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  flex: 1;
 }
 
 main {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  justify-content: flex-start;
   padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .description-box {
@@ -24,7 +34,7 @@ main {
   padding: 15px;
   font-size: 1.1em;
   max-width: 90%;
-  margin: 0 auto 30px auto;
+  margin: 10px auto 20px auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   text-align: center;
