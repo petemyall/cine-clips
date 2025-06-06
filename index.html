@@ -51,38 +51,41 @@
     }
   </style>
 </head>
-<body>
-  <div class="description-box">
-  <h1>Myall Family 1970's Cine Clips</h1>
-  <p>CLICK A PICTURE TO WATCH THE VIDEO</p>
-  </div>
-  
-  <div class="gallery">
-    <img src="thumbs/thumb1.jpg" class="video-thumb" onclick="playVideo('1wltzjbryOZYqxjaMhU73KZlTlUdAKU4e')" alt="Clip 1">
-    <img src="thumbs/thumb2.jpg" class="video-thumb" onclick="playVideo('1DGdp8BjwcK9Ld9AjzPAqlxYYNkoFp-98')" alt="Clip 2">
-    <img src="thumbs/thumb3.jpg" class="video-thumb" onclick="playVideo('1rjcSIanhE7DGzIUv_qcHTipFa_HbC4js')" alt="Clip 3">
-    <img src="thumbs/thumb4.jpg" class="video-thumb" onclick="playVideo('1N6FKpmHQ3Nqfo9ZqynxNMH-QItV7lzvV')" alt="Clip 4">
-    <img src="thumbs/thumb5.jpg" class="video-thumb" onclick="playVideo('1tOwbK3KMlplWF_ZSCAwLGPEqmryGQbwB')" alt="Clip 5">
-    <img src="thumbs/thumb6.jpg" class="video-thumb" onclick="playVideo('108GRTAL8yAvPLJ4IyDvknRinuw5sR5Ur')" alt="Clip 6">
-    <img src="thumbs/thumb7.jpg" class="video-thumb" onclick="playVideo('159_blKxeQfZx47a2i8q9kqaILWdDaMiV')" alt="Clip 7">
-    <img src="thumbs/thumb8.jpg" class="video-thumb" onclick="playVideo('1QOFmtrrCWAlHekB0qcoc1yFLBuV5nZQI')" alt="Clip 8">
-    <img src="thumbs/thumb9.jpg" class="video-thumb" onclick="playVideo('1j0-moRczb4NrdG_qq83exG7JsnmjlUta')" alt="Clip 9">
-  </div>
 
-  <div style="text-align:center; margin-top: 10px;">
+<body>
+  <main>
+    <div class="description-box">
+      <h1>Myall Family 1970's Cine Clips</h1>
+      <p>CLICK A PICTURE TO WATCH THE VIDEO</p>
+    </div>
+
+    <div class="gallery">
+      <img src="thumbs/thumb1.jpg" class="video-thumb" onclick="playVideo('1wltzjbryOZYqxjaMhU73KZlTlUdAKU4e')" alt="Clip 1">
+      <img src="thumbs/thumb2.jpg" class="video-thumb" onclick="playVideo('1DGdp8BjwcK9Ld9AjzPAqlxYYNkoFp-98')" alt="Clip 2">
+      <img src="thumbs/thumb3.jpg" class="video-thumb" onclick="playVideo('1rjcSIanhE7DGzIUv_qcHTipFa_HbC4js')" alt="Clip 3">
+      <img src="thumbs/thumb4.jpg" class="video-thumb" onclick="playVideo('1N6FKpmHQ3Nqfo9ZqynxNMH-QItV7lzvV')" alt="Clip 4">
+      <img src="thumbs/thumb5.jpg" class="video-thumb" onclick="playVideo('1tOwbK3KMlplWF_ZSCAwLGPEqmryGQbwB')" alt="Clip 5">
+      <img src="thumbs/thumb6.jpg" class="video-thumb" onclick="playVideo('108GRTAL8yAvPLJ4IyDvknRinuw5sR5Ur')" alt="Clip 6">
+      <img src="thumbs/thumb7.jpg" class="video-thumb" onclick="playVideo('159_blKxeQfZx47a2i8q9kqaILWdDaMiV')" alt="Clip 7">
+      <img src="thumbs/thumb8.jpg" class="video-thumb" onclick="playVideo('1QOFmtrrCWAlHekB0qcoc1yFLBuV5nZQI')" alt="Clip 8">
+      <img src="thumbs/thumb9.jpg" class="video-thumb" onclick="playVideo('1j0-moRczb4NrdG_qq83exG7JsnmjlUta')" alt="Clip 9">
+    </div>
+
+    <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen></iframe>
+
+    <div style="text-align:center; margin-top: 30px;">
       <a href="https://photos.google.com/your-album-placeholder" target="_blank" style="
-        background-color: rgba(173, 216, 230, 0.7);
+        background-color: #003366;
         color: white;
-        padding: 15px 30px;
+        padding: 10px 20px;
         text-decoration: none;
         border-radius: 8px;
-        font-size: 1.5em;
+        font-size: 1em;
         box-shadow: 2px 2px 4px #888;
         display: inline-block;
       ">View Full Album on Google Photos</a>
-  </div>
-
-  <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </main>
 
   <script>
     function playVideo(fileId) {
@@ -91,4 +94,5 @@
     }
   </script>
 </body>
+
 </html>
