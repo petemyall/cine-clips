@@ -2,90 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Myall Family 1970's Cine Clips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myall Family 1970s Cine Clips</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background: url('./cine-clip-background.jpg') center center no-repeat;
-      background-size: cover;
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #003366;
-      text-shadow: 1px 1px 2px #ffffff55;
-      .description-box {
-  text-align: center;
-  margin-bottom: 40px; /* Adjust value as needed */
-      }
-    }
-  
-    h1 {
-      margin-bottom: 10px;
-    }
-    p {
-      margin-top: 0;
-      font-size: 1.2em;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .video-thumb {
-      width: 150px;
-      cursor: pointer;
-      border: 4px solid white;
-      border-radius: 10px;
-      transition: transform 0.2s;
-    }
-    .video-thumb:hover {
-      transform: scale(1.05);
-    }
-    iframe {
-      margin-top: 20px;
-      width: 80%;
-      height: 450px;
-      max-width: 800px;
-    }
-  </style>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#003366">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
 </head>
-
-
 <body>
   <main>
-    <div class="description-box">
-      <h1>Myall Family 1970's Cine Clips</h1>
-      <p>CLICK A PICTURE TO WATCH THE VIDEO</p>
-    </div>
+    <section class="description-box">
+      <h1>Myall Family 1970s Cine Clips</h1>
+      <p>Click a picture to watch the video</p>
+    </section>
 
-    <div class="gallery">
+    <section class="gallery">
       <img src="thumbs/thumb1.jpg" class="video-thumb" onclick="playVideo('1wltzjbryOZYqxjaMhU73KZlTlUdAKU4e')" alt="Clip 1">
       <img src="thumbs/thumb2.jpg" class="video-thumb" onclick="playVideo('1DGdp8BjwcK9Ld9AjzPAqlxYYNkoFp-98')" alt="Clip 2">
       <img src="thumbs/thumb3.jpg" class="video-thumb" onclick="playVideo('1rjcSIanhE7DGzIUv_qcHTipFa_HbC4js')" alt="Clip 3">
-      <img src="thumbs/thumb4.jpg" class="video-thumb" onclick="playVideo('1N6FKpmHQ3Nqfo9ZqynxNMH-QItV7lzvV')" alt="Clip 4">
-      <img src="thumbs/thumb5.jpg" class="video-thumb" onclick="playVideo('1tOwbK3KMlplWF_ZSCAwLGPEqmryGQbwB')" alt="Clip 5">
-      <img src="thumbs/thumb6.jpg" class="video-thumb" onclick="playVideo('108GRTAL8yAvPLJ4IyDvknRinuw5sR5Ur')" alt="Clip 6">
-      <img src="thumbs/thumb7.jpg" class="video-thumb" onclick="playVideo('159_blKxeQfZx47a2i8q9kqaILWdDaMiV')" alt="Clip 7">
-      <img src="thumbs/thumb8.jpg" class="video-thumb" onclick="playVideo('1QOFmtrrCWAlHekB0qcoc1yFLBuV5nZQI')" alt="Clip 8">
-      <img src="thumbs/thumb9.jpg" class="video-thumb" onclick="playVideo('1j0-moRczb4NrdG_qq83exG7JsnmjlUta')" alt="Clip 9">
-    </div>
+    </section>
 
-    <div class="album-link">
+    <section class="album-link">
       <a href="https://photos.google.com/your-album-placeholder" target="_blank">View Full Album on Google Photos</a>
-    </div>
+    </section>
 
-    <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen></iframe>
+    <iframe id="videoPlayer" src="" allowfullscreen></iframe>
   </main>
 
   <script>
     function playVideo(fileId) {
-      const link = "https://drive.google.com/file/d/" + fileId + "/preview";
-      document.getElementById('videoPlayer').src = link;
+      document.getElementById('videoPlayer').src = "https://drive.google.com/file/d/" + fileId + "/preview";
     }
   </script>
 </body>
-
-
 </html>
