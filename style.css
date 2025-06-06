@@ -58,7 +58,11 @@ nav.journal-nav a {
   margin: 5px;
 }
 
-
+@media (max-width: 600px) {
+  nav.journal-nav a {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
 }
 .description-box {
   background: rgba(173, 216, 230, 0.5); /* Pale blue with more transparency */
@@ -201,7 +205,11 @@ nav.journal-nav a {
   font-family: 'Georgia', serif;
 }
 
-
+@media (max-width: 600px) {
+  .journal-book {
+    flex: 0 1 calc((100% - 20px) / 2);
+    max-width: calc((100% - 20px) / 2);
+  }
   .day-label {
     font-size: 0.9em;
   }
@@ -392,7 +400,13 @@ footer {
   height: 100%;
 }
 
-
+@media (max-width: 600px) {
+  .description-box {
+    padding: 8px;
+    font-size: 0.85em;
+    line-height: 1.3;
+    margin: 10px;
+  }
   .video-thumb {
     width: 100px;
   }
@@ -403,14 +417,6 @@ footer {
 }
 
 @media (max-width: 600px) {
-  html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    background-size: contain;
-    background-attachment: fixed;
-  }
   .description-box {
     padding: 10px;
     font-size: 1em;
