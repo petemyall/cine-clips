@@ -40,6 +40,12 @@
     function playVideo(fileId) {
       document.getElementById('videoPlayer').src = "https://drive.google.com/file/d/" + fileId + "/preview";
     }
+    document.querySelectorAll('.thumbnail').forEach(thumbnail => {
+  thumbnail.addEventListener('click', () => {
+    const videoPlayer = document.getElementById('video-player'); // Adjust ID/class as needed
+    videoPlayer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+});
   </script>
 </body>
 </html>
