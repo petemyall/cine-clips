@@ -8,6 +8,7 @@ html, body {
   background: url('cine-clip-background.jpg') center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 main {
