@@ -4,7 +4,6 @@ html, body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  font-size: 18px;
   font-family: sans-serif;
   background: url('cine-clip-background.jpg') center center no-repeat;
   background-size: cover;
