@@ -82,4 +82,11 @@ iframe {
   h1 {
   font-size: 15px;
   }
+  iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 180px;
+  border: none;
+  margin-top: 10px;
+  }
 }
