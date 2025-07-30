@@ -72,3 +72,11 @@ iframe {
   border: none;
   margin-top: 20px;
 }
+@media (max-width: 599px) {
+  html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: auto;
+  }
+}
