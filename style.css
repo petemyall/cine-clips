@@ -97,4 +97,7 @@ iframe {
   margin: 10px;
   text-align: center;
     }
+  .video-thumb {
+  width: 80px;
+  }
 }
