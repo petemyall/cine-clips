@@ -51,6 +51,9 @@ h1 {
 }
 
 .button {
+  background: rgba(173, 216, 230, 0.65);
+  padding: 15px;
+  border-radius: 10px;
   width: 110px;
   cursor: pointer;
   border: 3px solid white;
