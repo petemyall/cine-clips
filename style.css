@@ -50,6 +50,14 @@ h1 {
   transform: scale(1.05);
 }
 
+.button {
+  width: 110px;
+  cursor: pointer;
+  border: 3px solid white;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
 .album-link {
   margin: 20px;
   text-align: center;
