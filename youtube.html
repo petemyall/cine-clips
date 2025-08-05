@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Video Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>YouTube Video Gallery</h1>
+
+  <div class="gallery">
+
+    <div class="video-card">
+      <a href="#video1">
+        <img src="https://img.youtube.com/vi/VIDEO_ID_1/hqdefault.jpg" alt="Video 1 Thumbnail">
+      </a>
+      <div class="video-title">My First Video</div>
+    </div>
+
+    <div class="video-card">
+      <a href="#video2">
+        <img src="https://img.youtube.com/vi/VIDEO_ID_2/hqdefault.jpg" alt="Video 2 Thumbnail">
+      </a>
+      <div class="video-title">Exploring the Coastline</div>
+    </div>
+
+    <div class="video-card">
+      <a href="#video3">
+        <img src="https://img.youtube.com/vi/VIDEO_ID_3/hqdefault.jpg" alt="Video 3 Thumbnail">
+      </a>
+      <div class="video-title">Behind the Scenes</div>
+    </div>
+
+    <div class="video-card">
+      <a href="#video4">
+        <img src="https://img.youtube.com/vi/VIDEO_ID_4/hqdefault.jpg" alt="Video 4 Thumbnail">
+      </a>
+      <div class="video-title">Final Thoughts</div>
+    </div>
+
+  </div>
+
+  <!-- Lightbox Popups -->
+  <div id="video1" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1?autoplay=1" allowfullscreen></iframe>
+  </div>
+
+  <div id="video2" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2?autoplay=1" allowfullscreen></iframe>
+  </div>
+
+  <div id="video3" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_3?autoplay=1" allowfullscreen></iframe>
+  </div>
+
+  <div id="video4" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_4?autoplay=1" allowfullscreen></iframe>
+  </div>
+
+</body>
+</html>
